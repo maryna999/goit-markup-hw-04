@@ -36,7 +36,11 @@ padding: 0 15px;
 
 .header{
 border-bottom: 1px solid #e7e9fc;
-box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px, 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+box-shadow: 
+0px 2px 1px rgba(46, 47, 66, 0.08),
+0px 1px 1px rgba(46, 47, 66, 0.16),
+0px 1px 6px rgba(46, 47, 66, 0.08);
+background: #fff;
 }
 
 .container-header{
@@ -47,6 +51,11 @@ display: flex;
 display: flex;
 align-items: center;
 margin-right: auto;
+}
+.header-nav .current{
+position: relative;
+color: #404bbf;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current{
@@ -66,7 +75,6 @@ border-radius: 2px;
 background-color: #404bbf;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .header-logo{
 font-family: "Raleway", sans-serif;
@@ -94,6 +102,7 @@ padding: 24px 0;
 font-weight: 500;
 color: #2e2f42;
 cursor: pointer;
+transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-link:hover{
@@ -119,6 +128,7 @@ gap: 40px;
 color: #434455;
 padding: 24px 0;
 display: block;
+transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts:hover{
@@ -173,6 +183,7 @@ border: none;
 border-radius: 4px;
 margin: 0 auto;
 box-shadow: 0 2px 4px #2e2f42;
+transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover{
@@ -228,6 +239,7 @@ justify-content: center;
 padding-top: 24px;
 padding-bottom: 24px;
 margin-bottom: 8px;
+align-items: center;
 }
 
 .advantages-img{
@@ -327,6 +339,10 @@ background-color: #404bbf;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.team-link-icon:focus{
+background-color: #404bbf;    
+}
+
 
 .team-soc-link{
 fill: #f4f4fd;
@@ -363,6 +379,7 @@ margin: 0;
 width: calc((100% - 48px) / 3);
 padding-left: 0;
 margin: 0;
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list:hover{
@@ -479,6 +496,7 @@ gap: 16px;
 .footer-link-items{
 width: 40px;
 height: 40px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media{
@@ -501,6 +519,11 @@ justify-content: center;
 }
 
 .footer-icon:hover{
+background-color: #31d0aa;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon:focus {
 background-color: #31d0aa;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
